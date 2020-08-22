@@ -1,0 +1,38 @@
+
+                
+#include<stdio.h>       //changed to stdio
+void main()             //changed to void
+{	int a,b,c,mx,mi;    //changed to int
+	scanf("%d%d%d",&a,&b,&c); //changed the format specifier
+	printf("%d %d %d",a,b,c); //changed the format specifier and space tab
+	if(a>b)
+	{
+		if(a>c)
+		{
+			mx=a;
+			if(b>c)	
+				mi=c;
+			else 
+				mi=b;
+		}
+	}
+	else if(b>c)
+    	{
+		if(b>a) 
+		{
+			mx=b;
+            	if(a>c) 
+				mi=c;
+			else mi=a;
+		}
+	}
+	else//Please add a comment to each lines that has changes and Indicate the changes
+	{
+		mx=c;
+		if(a>b) 
+			mi=b;
+		else 
+			mi=a;
+	}
+	printf("\nLargest is %d and smallest is %d",mi,mx); //changed the format specifier, scanf and added newline
+}
