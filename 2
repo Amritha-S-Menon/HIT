@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()        //converted rain to main
+{
+    int a, b;   //converted char to int
+    scanf("%d",&a); //converted %f to %d
+    b=a%10;
+    a=a/10;
+    while(a!=0)   //changed condition
+    {
+        b=b*10+(a%10);  //changed + to *
+        a=a/10;
+    }
+    printf("%d",b); //converted %c to %d
+    return 0;
+}
